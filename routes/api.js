@@ -4,7 +4,7 @@ const members = require("../Members");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Message board", members });
+  res.json(members);
 });
 
 module.exports = router;
